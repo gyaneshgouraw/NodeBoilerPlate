@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <h1>Upload</h1>
+    <input name = "up" id="upload" type="file"/>
+    <input id= "submit" type="button" value="submit" onclick="upload()">
+  </body>
+  <script>
+
+
+function upload(){
+  var formData=new FormData();
+  formData.append("fieldname","value");
+  formData.append("image",$('[name="up"]')[0].files[0]);
+  $.ajax({
+      url:"http://localhost:3000/upload",
+      data:formData,
+      type: 'POST',
+      dataType:"JSON",
+      contentType: false,
+      processData: false,
+      success:function(data){
+      alert('success') }
+
+  });
+  // var data = {
+  //   "key":"value"
+  // }
+  //
+  // $.ajax({
+  //   type: "POST",
+  //   url: "http://localhost:3000/upload",
+  //   data: data,
+  //   success: function(data){
+  //     alert( "Data Loaded: " + data );
+  //   },
+  // });
+
+
+}
+
+
+  </script>
+</html>
