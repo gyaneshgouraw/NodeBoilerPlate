@@ -2,6 +2,17 @@ The MIT License (MIT)
 
 Copyright (c) 2016 Gyanesh Gouraw
 
+1//clone repo
+2//move your files into repo
+3//git add.
+4//git commit -m "Add existing file"
+5//git push origin your-branch
+6//https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/
+
+
+for again making changes and commiting
+4//git commit -am "Add existing file"  
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
